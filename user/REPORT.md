@@ -1,0 +1,3 @@
+I updated the xv6 kernel to support symbolic links, which act as pointers to other files. This involved creating a new system call to generate these links and modifying the file-opening logic so the system can automatically follow a chain of links to reach the final destination.
+
+The testsymlink file was used to verify that the system could successfully create links and read the contents of the files they point to.
